@@ -24,13 +24,21 @@ public class Test1 {
         }).start();
 
 
-        //可以放多行代码 以 大括号扩起
+        new Thread() {
+            @Override
+            public void run() {
+                System.out.println("thread third run test");
+            }
+        }.start();
+
+
+      /*  //可以放多行代码 以 大括号扩起
         new Thread(
                 () -> {
                     System.out.println("Thread test111");
                     System.out.println("Thread test222");
                 }
-        ).start();
+        ).start();*/
 
 
         /*
